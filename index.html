@@ -1,414 +1,894 @@
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx3cwhsk.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxPcwhsk.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwhsk.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx3cwhsk.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxPcwhsk.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwhsk.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx3cwhsk.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxPcwhsk.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwhsk.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="frame-ancestors *">
+  <meta charset="UTF-8">
+  <title>Signal — Incident INC-20460419-0473</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:        #0c0f13;
+    --bg-1:      #11151b;
+    --panel:     #151a22;
+    --panel-2:   #1a2029;
+    --panel-hi:  #1f2630;
+    --line:      #232b36;
+    --line-2:    #2d3744;
+    --ink:       #e6ebf2;
+    --ink-2:     #aab3c0;
+    --ink-3:     #6b7685;
+    --ink-4:     #485162;
+
+    --amber:     #e3a02b;
+    --amber-2:   #3a2c11;
+    --red:       #e5484d;
+    --red-2:     #3b1518;
+    --cyan:      #4cc2e0;
+    --cyan-2:    #0f2b36;
+    --green:     #3fb27f;
+    --green-2:   #0f2a1f;
+    --violet:    #9b7ef0;
+
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:13px;line-height:1.45;-webkit-font-smoothing:antialiased}
+  ::selection{background:#2d4660;color:#fff}
+
+  .chrome{display:flex;align-items:stretch;border-bottom:1px solid var(--line);background:var(--bg-1);height:44px;position:sticky;top:0;z-index:10}
+  .brand{display:flex;align-items:center;gap:10px;padding:0 16px;border-right:1px solid var(--line);min-width:220px}
+  .brand-mark{width:16px;height:16px;position:relative}
+  .brand-mark::before,.brand-mark::after{content:"";position:absolute;inset:0;border:1.5px solid var(--ink);transform:rotate(45deg)}
+  .brand-mark::after{inset:4px;border-color:var(--amber);background:var(--amber);opacity:.9}
+  .brand-name{font-weight:600;letter-spacing:.02em}
+  .brand-sub{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+
+  .nav{display:flex;align-items:stretch}
+  .nav a{display:flex;align-items:center;padding:0 14px;color:var(--ink-2);text-decoration:none;font-size:12.5px;border-right:1px solid var(--line);position:relative}
+  .nav a.active{color:var(--ink);background:var(--panel)}
+  .nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--amber)}
+  .nav a:hover{color:var(--ink)}
+
+  .chrome-right{margin-left:auto;display:flex;align-items:center;gap:14px;padding:0 14px;color:var(--ink-3);font-family:var(--mono);font-size:11px}
+  .dot{width:6px;height:6px;border-radius:50%;display:inline-block;vertical-align:middle}
+  .dot.live{background:var(--green);box-shadow:0 0 0 3px rgba(63,178,127,.18)}
+  .avatar{width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#3a475c,#1f2937);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:11px;font-weight:600}
+
+  .sub{display:flex;align-items:center;gap:0;padding:10px 20px;border-bottom:1px solid var(--line);background:var(--bg-1);font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+  .sub .crumb{color:var(--ink-3)}
+  .sub .crumb.cur{color:var(--ink)}
+  .sub .sep{margin:0 8px;color:var(--ink-4)}
+
+  .header{padding:18px 20px 14px;border-bottom:1px solid var(--line);display:flex;align-items:flex-start;gap:24px}
+  .h-id{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-bottom:6px}
+  .h-title{font-size:22px;font-weight:600;letter-spacing:-0.01em;margin:0 0 8px}
+  .h-title .sev{color:var(--amber)}
+  .h-meta{display:flex;gap:22px;font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+  .h-meta b{color:var(--ink);font-weight:500}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:3px 8px;border-radius:2px;font-family:var(--mono);font-size:11px;letter-spacing:.02em;border:1px solid var(--line-2)}
+  .pill.amber{color:var(--amber);background:var(--amber-2);border-color:#5a4318}
+  .pill.red{color:var(--red);background:var(--red-2);border-color:#5a1e22}
+  .pill.cyan{color:var(--cyan);background:var(--cyan-2);border-color:#1b4a5d}
+  .pill.green{color:var(--green);background:var(--green-2);border-color:#184833}
+  .pill.ghost{color:var(--ink-2);background:transparent}
+
+  .header-actions{margin-left:auto;display:flex;gap:8px;align-items:center}
+  .btn{appearance:none;border:1px solid var(--line-2);background:var(--panel);color:var(--ink);font-family:var(--sans);font-size:12.5px;padding:7px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background .12s, border-color .12s}
+  .btn:hover{background:var(--panel-hi);border-color:#3a4656}
+  .btn.primary{background:#b8801b;border-color:#b8801b;color:#0c0f13;font-weight:600}
+  .btn.primary:hover{background:#d49428;border-color:#d49428}
+  .btn.danger{background:transparent;border-color:#6a2528;color:#ff6b70}
+  .btn.danger:hover{background:#2a0f11}
+  .btn .k{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);border:1px solid var(--line-2);padding:1px 5px;border-radius:2px;background:var(--bg)}
+
+  .grid{display:grid;grid-template-columns:320px 1fr 340px;gap:0;background:var(--bg);border-bottom:1px solid var(--line)}
+  .col{background:var(--bg);min-height:calc(100vh - 160px)}
+  .col.col-left{border-right:1px solid var(--line-2);box-shadow:1px 0 0 0 rgba(0,0,0,.35)}
+  .col.col-center{border-right:1px solid var(--line)}
+  .col.col-right{background:#101419}
+  .panel{border-bottom:1px solid var(--line);padding:16px 18px}
+  .panel:last-child{border-bottom:none}
+  .panel-title{display:flex;align-items:center;justify-content:space-between;margin:0 0 12px;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);font-weight:600}
+  .panel-title .count{font-family:var(--mono);color:var(--ink-4);font-weight:500;letter-spacing:0;text-transform:none;font-size:11px}
+
+  .emp{display:flex;gap:12px;align-items:flex-start}
+  .emp-avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(140deg,#3a475c,#1a2029);color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:600;flex-shrink:0;position:relative;border:1px solid var(--line-2)}
+  .emp-avatar::after{content:"";position:absolute;right:-2px;bottom:-2px;width:12px;height:12px;border-radius:50%;background:var(--green);border:2px solid var(--panel)}
+  .emp-name{font-size:15px;font-weight:600;margin:0}
+  .emp-role{color:var(--ink-2);font-size:12px;margin-top:2px}
+  .emp-id{font-family:var(--mono);color:var(--ink-3);font-size:11px;margin-top:4px}
+
+  .emp-meta{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:14px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .emp-meta div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:9px 10px}
+  .emp-meta .lbl{font-size:10.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px}
+  .emp-meta .val{font-family:var(--mono);font-size:12px;color:var(--ink)}
+
+  .risk{margin-top:14px;border:1px solid var(--line);background:var(--panel)}
+  .risk-top{display:flex;justify-content:space-between;align-items:flex-end;padding:14px 14px 10px;gap:12px}
+  .risk-label{font-size:10.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+  .risk-top .lcol{display:flex;flex-direction:column}
+  .risk-top .lcol .sub{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:6px}
+  .risk-top .lcol .sub b{color:var(--ink-2);font-weight:500}
+  .risk-score{font-family:var(--mono);font-size:58px;font-weight:600;color:var(--amber);letter-spacing:-0.04em;line-height:0.9}
+  .risk-score small{font-size:18px;color:var(--ink-3);font-weight:400;letter-spacing:0}
+  .risk-bar{height:6px;background:var(--line);margin:0 14px}
+  .risk-bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--amber) 55%,var(--red));width:74%}
+  .risk-meta{padding:10px 14px 12px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+  .risk-meta b{color:var(--ink-2);font-weight:500}
+  .risk-delta{color:var(--red);font-weight:500}
+
+  .taglist{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+
+  .tabs{display:flex;border-bottom:1px solid var(--line);background:var(--bg-1);padding:0 20px}
+  .tab{padding:12px 16px;color:var(--ink-3);font-size:12.5px;cursor:pointer;position:relative;border:none;background:transparent;font-family:inherit}
+  .tab.active{color:var(--ink)}
+  .tab.active::after{content:"";position:absolute;left:16px;right:16px;bottom:-1px;height:2px;background:var(--amber)}
+  .tab .badge{margin-left:6px;font-family:var(--mono);font-size:10.5px;background:var(--panel-hi);color:var(--ink-2);padding:1px 5px;border-radius:2px}
+
+  .expo{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line);background:var(--bg-1)}
+  .expo > div{padding:14px 18px;border-right:1px solid var(--line)}
+  .expo > div:last-child{border-right:none}
+  .expo .lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-3);margin-bottom:6px}
+  .expo .val{font-family:var(--mono);font-size:18px;color:var(--ink);font-weight:500}
+  .expo .val small{font-size:12px;color:var(--ink-3);margin-left:4px;font-weight:400}
+  .expo .val.red{color:var(--red)}
+  .expo .val.amber{color:var(--amber)}
+
+  .data-card{margin:18px 20px;border:1px solid var(--line);background:var(--panel)}
+  .data-card-h{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line);background:var(--panel-2)}
+  .file-ico{width:28px;height:34px;border:1px solid var(--line-2);position:relative;flex-shrink:0;background:var(--bg-1)}
+  .file-ico::before{content:"";position:absolute;right:-1px;top:-1px;width:8px;height:8px;background:var(--panel-2);border-left:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+  .file-ico::after{content:"XLSX";position:absolute;left:0;right:0;bottom:4px;text-align:center;font-family:var(--mono);font-size:8px;color:var(--green);letter-spacing:.05em}
+  .data-card-h .fn{font-family:var(--mono);font-size:13px;color:var(--ink);font-weight:500}
+  .data-card-h .path{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-top:2px}
+  .data-card-h .right{margin-left:auto;display:flex;gap:6px}
+
+  .data-rows{display:grid;grid-template-columns:repeat(4,1fr)}
+  .data-rows > div{padding:12px 14px;border-right:1px solid var(--line)}
+  .data-rows > div:last-child{border-right:none}
+  .data-rows .lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-3);margin-bottom:4px}
+  .data-rows .val{font-family:var(--mono);font-size:13px;color:var(--ink)}
+  .data-rows .val .sub{color:var(--ink-3);margin-left:4px;font-size:11px}
+
+  .class-bar{padding:10px 14px;border-top:1px solid var(--line);background:var(--bg-1);display:flex;align-items:center;gap:18px;font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+  .class-bar .seg{display:flex;gap:0;border:1px solid var(--line-2);flex-shrink:0}
+  .class-bar .seg span{padding:3px 8px;border-right:1px solid var(--line-2);color:var(--ink-4)}
+  .class-bar .seg span:last-child{border-right:none}
+  .class-bar .seg span.on{background:var(--red);color:#fff}
+  .class-bar b{color:var(--ink-2);font-weight:500}
+
+  .tl{margin:18px 20px 0;position:relative}
+  .tl-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+  .tl-head h3{margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);font-weight:600}
+  .tl-filters{display:flex;gap:0;border:1px solid var(--line-2);font-family:var(--mono);font-size:11px}
+  .tl-filters button{background:transparent;border:none;border-right:1px solid var(--line-2);color:var(--ink-3);padding:4px 10px;cursor:pointer;font-family:inherit;font-size:inherit}
+  .tl-filters button:last-child{border-right:none}
+  .tl-filters button.on{background:var(--panel-hi);color:var(--ink)}
+
+  .tl-strip{height:48px;border:1px solid var(--line);background:var(--panel);position:relative;margin-bottom:12px;display:flex;align-items:stretch}
+  .tl-strip .hr{flex:1;border-right:1px dashed var(--line);position:relative}
+  .tl-strip .hr:last-child{border-right:none}
+  .tl-strip .hr span{position:absolute;top:-16px;left:-14px;font-family:var(--mono);font-size:10px;color:var(--ink-4)}
+  .tl-strip .tick{position:absolute;bottom:4px;width:2px;background:var(--cyan);opacity:.7}
+  .tl-strip .tick.t1{left:8%;height:20px}
+  .tl-strip .tick.t2{left:18%;height:12px}
+  .tl-strip .tick.t3{left:24%;height:28px;background:var(--amber)}
+  .tl-strip .tick.t4{left:26%;height:32px;background:var(--amber)}
+  .tl-strip .tick.t5{left:33%;height:36px;background:var(--red)}
+  .tl-strip .tick.t6{left:33.5%;height:28px;background:var(--red)}
+  .tl-strip .tick.t7{left:42%;height:16px}
+  .tl-strip .tick.t8{left:58%;height:10px}
+  .tl-strip .tick.t9{left:71%;height:22px;background:var(--amber)}
+  .tl-strip .tick.t10{left:88%;height:14px}
+  .tl-strip .now{position:absolute;right:0;top:0;bottom:0;width:1px;background:var(--ink-3)}
+  .tl-strip .now::after{content:"NOW";position:absolute;right:4px;top:4px;font-family:var(--mono);font-size:9px;color:var(--ink-3);letter-spacing:.1em}
+  .tl-strip .incident-marker{position:absolute;left:33%;top:0;bottom:0;width:2px;background:var(--red);opacity:.35}
+
+  .events{border:1px solid var(--line);border-bottom:none}
+  .ev{display:grid;grid-template-columns:140px 28px 1fr auto;gap:0;padding:11px 14px;border-bottom:1px solid var(--line);align-items:flex-start;position:relative;cursor:pointer}
+  .ev:hover{background:var(--panel)}
+  .ev.flag{background:linear-gradient(90deg,rgba(229,72,77,.08),transparent 40%)}
+  .ev.flag:hover{background:linear-gradient(90deg,rgba(229,72,77,.14),rgba(229,72,77,.02) 40%)}
+  .ev-time{font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+  .ev-time b{display:block;color:var(--ink-2);font-weight:500}
+  .ev-dot{width:10px;height:10px;border-radius:50%;margin-top:5px;border:2px solid var(--bg);background:var(--ink-3);box-shadow:0 0 0 1px var(--line-2)}
+  .ev-dot.amber{background:var(--amber);box-shadow:0 0 0 1px #5a4318, 0 0 0 4px rgba(227,160,43,.12)}
+  .ev-dot.red{background:var(--red);box-shadow:0 0 0 1px #5a1e22, 0 0 0 4px rgba(229,72,77,.14)}
+  .ev-dot.cyan{background:var(--cyan);box-shadow:0 0 0 1px #1b4a5d}
+  .ev-dot.green{background:var(--green)}
+  .ev-body .t{font-size:13px;color:var(--ink);font-weight:500}
+  .ev-body .t .hl{color:var(--amber)}
+  .ev-body .t .hlr{color:var(--red)}
+  .ev-body .d{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-top:3px;display:flex;flex-wrap:wrap;gap:0 14px}
+  .ev-body .d span::before{content:"";display:inline-block;width:2px;height:2px;background:var(--ink-4);border-radius:50%;margin-right:6px;vertical-align:middle}
+  .ev-tag{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);background:var(--panel-hi);padding:2px 6px;border-radius:2px;margin-top:2px;white-space:nowrap}
+  .ev:not(:last-child)::before{content:"";position:absolute;left:calc(140px + 14px + 13px);top:26px;bottom:-1px;width:2px;background:var(--line)}
+
+  .conf{padding:18px}
+  .conf-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+  .conf-title h3{margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);font-weight:600}
+  .conf-meter{position:relative;height:auto;margin-bottom:18px}
+  .conf-meter svg{width:100%;height:auto;overflow:visible;display:block}
+  .conf-sublabel{text-align:center;margin-top:10px;font-size:10.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.14em;font-weight:500}
+
+  .conf-verdict{margin-top:14px;padding:10px 12px;border:1px solid #5a4318;background:var(--amber-2);display:flex;gap:10px;align-items:flex-start}
+  .conf-verdict .ic{color:var(--amber);font-family:var(--mono);font-weight:700;flex-shrink:0;margin-top:1px}
+  .conf-verdict .t{font-size:12.5px;color:var(--ink);font-weight:500}
+  .conf-verdict .s{font-size:11.5px;color:var(--ink-2);margin-top:2px}
+
+  .factors{margin-top:16px;display:flex;flex-direction:column;gap:10px}
+  .factors-head{display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em;padding:0 2px 2px}
+  .factors-head .fh-label{color:var(--ink-2);letter-spacing:.1em;font-weight:500}
+  .factor{display:grid;grid-template-columns:1fr auto;gap:6px 10px;padding:12px 14px;background:var(--panel);border:1px solid var(--line);align-items:center}
+  .factor .t{font-size:13.5px;color:var(--ink);font-weight:500;line-height:1.35}
+  .factor .w{font-family:var(--mono);font-size:15px;font-weight:600;letter-spacing:-0.01em}
+  .factor.neg .w{color:var(--red)}
+  .factor.pos .w{color:var(--cyan)}
+  .factor .bar{grid-column:1/3;height:6px;background:var(--line);margin-top:2px;position:relative}
+  .factor .bar > i{display:block;height:100%}
+  .factor.pos .bar > i{background:var(--cyan)}
+  .factor.neg .bar > i{background:var(--red)}
+  .factor .w .arrow{font-size:12px;margin-right:2px}
+  .factor.neg .w .arrow{color:var(--red)}
+  .factor.pos .w .arrow{color:var(--cyan)}
+
+  .kv{display:grid;grid-template-columns:1fr auto;gap:6px 12px;font-size:12px}
+  .kv dt{color:var(--ink-3)}
+  .kv dd{margin:0;font-family:var(--mono);color:var(--ink)}
+  .kv dd.amber{color:var(--amber)}
+  .kv dd.red{color:var(--red)}
+  .kv dd.green{color:var(--green)}
+
+  .pattern{border:1px solid var(--line);margin-top:12px;padding:10px 12px;background:var(--panel)}
+  .pattern .ph{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+  .pattern .ph b{color:var(--ink);font-weight:500}
+  .heat{display:grid;grid-template-columns:repeat(24,1fr);grid-auto-rows:10px;gap:2px}
+  .heat div{background:var(--line)}
+  .heat div[data-l="1"]{background:#1f3040}
+  .heat div[data-l="2"]{background:#2b4c66}
+  .heat div[data-l="3"]{background:#3a7091}
+  .heat div[data-l="4"]{background:var(--cyan)}
+  .heat div.flag{background:var(--red);box-shadow:0 0 0 1px #802326}
+  .heat-axis{display:flex;justify-content:space-between;font-family:var(--mono);font-size:9.5px;color:var(--ink-4);margin-top:6px}
+
+  .mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:10px;border:1px solid var(--line)}
+  .mini-stats div{background:var(--panel);padding:9px 10px}
+  .mini-stats .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);margin-bottom:3px}
+  .mini-stats .val{font-family:var(--mono);font-size:14px;color:var(--ink);font-weight:500}
+  .mini-stats .val.red{color:var(--red)}
+  .mini-stats .val.amber{color:var(--amber)}
+  .mini-stats .d{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:2px}
+
+  .actions{border:1px solid var(--line);background:var(--panel)}
+  .a-h{padding:10px 12px;border-bottom:1px solid var(--line);background:var(--panel-2);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);font-weight:600;display:flex;justify-content:space-between;align-items:center}
+  .a-h .rec{color:var(--amber);font-family:var(--mono);text-transform:none;letter-spacing:0;font-size:11px;font-weight:500}
+  .a-list{display:flex;flex-direction:column}
+  .action{display:flex;gap:12px;padding:12px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .12s;align-items:flex-start;position:relative;background:var(--panel-2)}
+  .action:last-child{border-bottom:none}
+  .action:hover{background:#1e2530}
+  .action .a-t{color:var(--ink-2);font-weight:500}
+  .action .a-s{color:var(--ink-3)}
+  .action.recommended{background:linear-gradient(90deg,rgba(227,160,43,.22),rgba(227,160,43,.06) 70%);border-left:3px solid var(--amber)}
+  .action.recommended:hover{background:linear-gradient(90deg,rgba(227,160,43,.3),rgba(227,160,43,.1) 70%)}
+  .action.recommended .a-t{color:#ffd98a;font-weight:600}
+  .action.recommended .a-s{color:#d9c39a}
+  .action.recommended .a-check{border-color:var(--amber);background:rgba(227,160,43,.15)}
+  .action.recommended .a-go{color:var(--amber)}
+  .a-check{width:16px;height:16px;border:1px solid var(--line-2);flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;background:var(--bg-1)}
+  .action.done .a-check{background:var(--green);border-color:var(--green)}
+  .action.done .a-check::after{content:"";width:8px;height:4px;border-left:2px solid var(--bg);border-bottom:2px solid var(--bg);transform:rotate(-45deg) translate(1px,-1px)}
+  .a-body{flex:1;min-width:0}
+  .a-t{font-size:13px;color:var(--ink);font-weight:500;display:flex;align-items:center;gap:8px}
+  .a-t .rec-tag{font-family:var(--mono);font-size:9.5px;background:var(--amber);color:#0c0f13;padding:1px 5px;border-radius:2px;letter-spacing:.04em;font-weight:600}
+  .a-s{font-size:11.5px;color:var(--ink-3);margin-top:3px;line-height:1.45}
+  .a-meta{font-family:var(--mono);font-size:10.5px;color:var(--ink-4);margin-top:4px}
+  .a-go{color:var(--ink-3);font-family:var(--mono);font-size:16px;align-self:center;flex-shrink:0}
+  .action:hover .a-go{color:var(--ink)}
+
+  .a-footer{padding:10px 12px;display:flex;gap:8px;border-top:1px solid var(--line);background:var(--panel-2)}
+  .a-footer .btn{flex:1;justify-content:center}
+
+  .bridge-panel{border-top:none !important;padding:0 !important}
+  .bridge{position:relative;padding:0 18px;margin-top:-8px}
+  .bridge-rail{position:absolute;left:50%;top:-14px;width:2px;height:26px;background:linear-gradient(180deg, var(--amber), rgba(227,160,43,.2));transform:translateX(-1px)}
+  .bridge-body{display:flex;align-items:flex-start;gap:8px;padding:10px 12px;background:linear-gradient(180deg, rgba(227,160,43,.1), transparent);border-left:2px solid var(--amber);font-size:12px;color:var(--ink-2);line-height:1.45}
+  .bridge-arrow{font-family:var(--mono);color:var(--amber);font-size:14px;line-height:1;margin-top:1px;flex-shrink:0}
+  .bridge-text b{color:var(--ink);font-weight:600}
+  .triggered-by{font-family:var(--mono);font-size:10.5px;color:var(--amber);text-transform:none;letter-spacing:0;font-weight:500;margin-left:8px}
+
+  .conf-downstream{margin-top:14px;display:flex;align-items:center;gap:8px;padding-top:12px;border-top:1px dashed var(--line-2);font-family:var(--mono);font-size:11px;color:var(--amber)}
+  .conf-downstream::before{content:"";width:6px;height:6px;background:var(--amber);border-radius:50%;box-shadow:0 0 0 3px rgba(227,160,43,.2)}
+  .conf-downstream .arr{color:var(--ink-3);margin:0 2px}
+  .conf-downstream b{color:var(--ink);font-weight:500}
+
+  .split-h{display:flex;align-items:center;justify-content:space-between;margin:0 0 10px}
+  .split-h h3{margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);font-weight:600}
+  .split-h .more{color:var(--ink-3);font-size:11px;cursor:pointer;text-decoration:none}
+  .split-h .more:hover{color:var(--ink)}
+
+  .status{display:flex;align-items:center;gap:18px;padding:6px 16px;border-top:1px solid var(--line);background:var(--bg-1);font-family:var(--mono);font-size:11px;color:var(--ink-3);position:sticky;bottom:0;z-index:5}
+  .status .sp{margin-left:auto}
+  .status b{color:var(--ink-2);font-weight:500}
+  .status .k{border:1px solid var(--line-2);padding:1px 5px;background:var(--bg)}
+
+  .section-divider{display:flex;align-items:center;gap:12px;margin:6px 20px 0;padding:20px 0 4px;border-top:1px solid var(--line-2);position:relative}
+  .section-divider::before{content:"";position:absolute;left:0;top:-1px;width:64px;height:2px;background:var(--amber);opacity:.7}
+  .section-divider span{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.14em;font-weight:600}
+
+  .col.col-right .panel{background:transparent}
+
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:var(--bg)}
+  ::-webkit-scrollbar-thumb{background:#212834;border:2px solid var(--bg)}
+  ::-webkit-scrollbar-thumb:hover{background:#2c3442}
+
+  .toast{position:fixed;bottom:36px;right:20px;background:var(--panel-hi);border:1px solid var(--line-2);padding:10px 14px;font-size:12.5px;color:var(--ink);display:flex;gap:10px;align-items:center;transform:translateY(20px);opacity:0;transition:transform .2s, opacity .2s;z-index:50;box-shadow:0 12px 24px rgba(0,0,0,.4)}
+  .toast.on{transform:none;opacity:1}
+  .toast .bd{width:6px;height:6px;border-radius:50%;background:var(--green)}
+</style>
+</head>
+<body>
+
+<header class="chrome">
+  <div class="brand">
+    <div class="brand-mark"></div>
+    <div>
+      <div class="brand-name">Signal</div>
+      <div class="brand-sub">DLP · v1.0.0</div>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="#">Overview</a>
+    <a href="#" class="active">Incidents</a>
+    <a href="#">Policies</a>
+    <a href="#">Users</a>
+    <a href="#">Data</a>
+    <a href="#">Reports</a>
+  </nav>
+  <div class="chrome-right">
+    <span><span class="dot live"></span>&nbsp; streaming · 412 events/s</span>
+    <span>ORG: northwind-corp</span>
+    <span>UTC−07:00</span>
+    <span class="avatar">MK</span>
+  </div>
+</header>
+
+<div class="sub">
+  <span class="crumb">Incidents</span>
+  <span class="sep">/</span>
+  <span class="crumb">Data Exposure</span>
+  <span class="sep">/</span>
+  <span class="crumb cur">INC-20460419-0473</span>
+  <span style="margin-left:auto;color:var(--ink-4)">assigned to <span style="color:var(--ink-2)">m.kwon@northwind</span> · opened 2h 14m ago</span>
+</div>
+
+<section class="header">
+  <div>
+    <div class="h-id">INC-20460419-0473 · policy violation · data-exposure/external-share</div>
+    <h1 class="h-title">External share of <span class="sev">Q2-Pricing-Forecast.xlsx</span> to personal email</h1>
+    <div class="h-meta">
+      <span><b>Status</b> · <span class="pill amber">OPEN · INVESTIGATING</span></span>
+      <span><b>Severity</b> · <span class="pill red">HIGH</span></span>
+      <span><b>Detected</b> · 14:32:07 PDT · Apr 19</span>
+      <span><b>Source</b> · DLP/email-gateway</span>
+      <span><b>MTTR target</b> · 4h</span>
+    </div>
+  </div>
+  <div class="header-actions">
+    <button class="btn">Assign <span class="k">A</span></button>
+    <button class="btn">Snooze</button>
+    <button class="btn danger">Close as FP</button>
+    <button class="btn primary" id="resolveBtn">Resolve incident</button>
+  </div>
+</section>
+
+<main class="grid">
+
+  <!-- LEFT COLUMN -->
+  <aside class="col col-left">
+    <div class="panel">
+      <div class="panel-title">Subject <span class="count">employee</span></div>
+      <div class="emp">
+        <div class="emp-avatar">DR</div>
+        <div>
+          <h2 class="emp-name">Daniel Reyes</h2>
+          <div class="emp-role">Senior Financial Analyst · Finance · FP&amp;A</div>
+          <div class="emp-id">emp_00418 · dreyes@northwind.corp</div>
+        </div>
+      </div>
+      <div class="emp-meta">
+        <div><div class="lbl">Manager</div><div class="val">S. Alvarez</div></div>
+        <div><div class="lbl">Tenure</div><div class="val">4y 2m</div></div>
+        <div><div class="lbl">Location</div><div class="val">Seattle · remote</div></div>
+        <div><div class="lbl">Device</div><div class="val">MBP · managed</div></div>
+        <div><div class="lbl">Clearance</div><div class="val">Tier 2 · Finance</div></div>
+        <div><div class="lbl">Last login</div><div class="val">2m ago · VPN</div></div>
+      </div>
+      <div class="risk">
+        <div class="risk-top">
+          <div class="lcol">
+            <span class="risk-label">Risk score</span>
+            <span class="sub"><b>Elevated</b> · 78th pctl</span>
+          </div>
+          <span class="risk-score">74<small>/100</small></span>
+        </div>
+        <div class="risk-bar"><i></i></div>
+        <div class="risk-meta">
+          <span><b>baseline</b> 33 · <b>peer avg</b> 28</span>
+          <span class="risk-delta">▲ +41 · 24h</span>
+        </div>
+      </div>
+      <div class="taglist">
+        <span class="pill ghost">finance-sensitive</span>
+        <span class="pill ghost">privileged-sharepoint</span>
+        <span class="pill amber">watchlist · 6d</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Behavioral context <span class="count">last 90d</span></div>
+      <dl class="kv">
+        <dt>Prior DLP events</dt><dd class="amber">3</dd>
+        <dt>Prior incidents (any)</dt><dd>0</dd>
+        <dt>First offense of this class</dt><dd class="red">No</dd>
+        <dt>Pattern</dt><dd class="amber">recurring · escalating</dd>
+        <dt>Peer-group deviation</dt><dd>+3.2σ</dd>
+        <dt>Training completed</dt><dd>2045-11-14</dd>
+        <dt>Policy acknowledged</dt><dd class="green">Yes · v4.2</dd>
+      </dl>
+      <div class="pattern">
+        <div class="ph"><span>Share activity · 24h</span><b>peak 14:30</b></div>
+        <div class="heat" id="heat"></div>
+        <div class="heat-axis"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>
+      </div>
+      <div class="mini-stats">
+        <div><div class="lbl">After-hours shares</div><div class="val amber">12</div><div class="d">vs peer 1.4 avg</div></div>
+        <div><div class="lbl">External recipients</div><div class="val red">8 new</div><div class="d">in last 14d</div></div>
+        <div><div class="lbl">Sensitive files touched</div><div class="val">47</div><div class="d">+22% MoM</div></div>
+        <div><div class="lbl">USB volume</div><div class="val">0 B</div><div class="d">blocked by policy</div></div>
+      </div>
+    </div>
+
+    <div class="panel" style="padding-bottom:22px">
+      <div class="panel-title">Related incidents <span class="count">3 · 90d</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-family:var(--mono);font-size:11.5px">
+        <a href="#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
+          <span><span class="pill amber" style="margin-right:8px">MED</span>INC-20460412-0128</span>
+          <span style="color:var(--ink-3)">7d</span>
+        </a>
+        <a href="#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
+          <span><span class="pill amber" style="margin-right:8px">MED</span>INC-20460403-0091</span>
+          <span style="color:var(--ink-3)">16d</span>
+        </a>
+        <a href="#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
+          <span><span class="pill ghost" style="margin-right:8px">LOW</span>INC-20460219-0051</span>
+          <span style="color:var(--ink-3)">59d</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CENTER COLUMN -->
+  <section class="col col-center">
+    <div class="tabs">
+      <button class="tab active">Investigation</button>
+      <button class="tab">Evidence <span class="badge">14</span></button>
+      <button class="tab">Raw events <span class="badge">1.2k</span></button>
+      <button class="tab">Policy hits <span class="badge">3</span></button>
+      <button class="tab">Notes</button>
+    </div>
+
+    <div class="expo">
+      <div><div class="lbl">Sensitivity</div><div class="val red">RESTRICTED <small>· tier 3</small></div></div>
+      <div><div class="lbl">Records exposed</div><div class="val">14,208 <small>rows</small></div></div>
+      <div><div class="lbl">External recipients</div><div class="val amber">1 <small>· personal gmail</small></div></div>
+      <div><div class="lbl">Blast radius</div><div class="val">contained <small>· no fwd</small></div></div>
+    </div>
+
+    <div class="data-card">
+      <div class="data-card-h">
+        <div class="file-ico"></div>
+        <div>
+          <div class="fn">Q2-Pricing-Forecast.xlsx</div>
+          <div class="path">sharepoint://finance/fp&amp;a/forecasting/2046/Q2/ · 4.1 MB · modified 11:42 PDT</div>
+        </div>
+        <div class="right">
+          <span class="pill red">RESTRICTED</span>
+          <span class="pill ghost">PII · 3 types</span>
+          <span class="pill ghost">financial</span>
+        </div>
+      </div>
+      <div class="data-rows">
+        <div><div class="lbl">Rows · cols</div><div class="val">14,208 <span class="sub">× 42</span></div></div>
+        <div><div class="lbl">Customer records</div><div class="val">11,642</div></div>
+        <div><div class="lbl">Revenue figures</div><div class="val">Q2 + FY forecast</div></div>
+        <div><div class="lbl">Classifier match</div><div class="val">98.6% <span class="sub">conf</span></div></div>
+      </div>
+      <div class="class-bar">
+        <span>Sensitivity</span>
+        <div class="seg">
+          <span>PUB</span><span>INT</span><span>CONF</span><span class="on">RESTR</span><span>SEC</span>
+        </div>
+        <span>Data types · <b>PII·email</b> · <b>PII·name</b> · <b>financial·forecast</b> · <b>pricing·strategy</b></span>
+        <span style="margin-left:auto">Owner · <b>S. Alvarez</b></span>
+      </div>
+    </div>
+
+    <div class="section-divider"><span>Activity timeline</span></div>
+    <section class="tl">
+      <div class="tl-head">
+        <h3>Activity timeline · incident ±2h window</h3>
+        <div class="tl-filters">
+          <button>1h</button>
+          <button class="on">6h</button>
+          <button>24h</button>
+          <button>7d</button>
+          <button>30d</button>
+        </div>
+      </div>
+      <div class="tl-strip" aria-hidden="true">
+        <div class="hr"><span>12:30</span></div>
+        <div class="hr"><span>13:00</span></div>
+        <div class="hr"><span>13:30</span></div>
+        <div class="hr"><span>14:00</span></div>
+        <div class="hr"><span>14:30</span></div>
+        <div class="hr"><span>15:00</span></div>
+        <span class="tick t1"></span><span class="tick t2"></span>
+        <span class="tick t3"></span><span class="tick t4"></span>
+        <span class="tick t5"></span><span class="tick t6"></span>
+        <span class="tick t7"></span><span class="tick t8"></span>
+        <span class="tick t9"></span><span class="tick t10"></span>
+        <span class="incident-marker"></span>
+        <span class="now"></span>
+      </div>
+
+      <div class="events">
+        <div class="ev">
+          <div class="ev-time"><b>12:08:41</b>PDT · 2h 37m ago</div>
+          <div><div class="ev-dot cyan"></div></div>
+          <div class="ev-body">
+            <div class="t">VPN session established from <span class="hl">Seattle · res ISP</span></div>
+            <div class="d"><span>ip 73.82.114.201</span><span>dev MBP-DR-14</span><span>auth sso+mfa</span></div>
+          </div>
+          <span class="ev-tag">auth.session</span>
+        </div>
+        <div class="ev">
+          <div class="ev-time"><b>13:42:19</b>PDT · 1h 03m ago</div>
+          <div><div class="ev-dot cyan"></div></div>
+          <div class="ev-body">
+            <div class="t">Accessed SharePoint path <span class="hl">/finance/fp&amp;a/forecasting/2046/Q2/</span></div>
+            <div class="d"><span>session 9a1f…e8</span><span>14 files listed</span><span>2 opened</span></div>
+          </div>
+          <span class="ev-tag">sharepoint.list</span>
+        </div>
+        <div class="ev">
+          <div class="ev-time"><b>14:11:02</b>PDT · 34m ago</div>
+          <div><div class="ev-dot amber"></div></div>
+          <div class="ev-body">
+            <div class="t">Downloaded <span class="hl">Q2-Pricing-Forecast.xlsx</span> to local device</div>
+            <div class="d"><span>4.1 MB</span><span>classification RESTRICTED</span><span>policy allow · audit</span></div>
+          </div>
+          <span class="ev-tag">file.download</span>
+        </div>
+        <div class="ev">
+          <div class="ev-time"><b>14:19:47</b>PDT · 26m ago</div>
+          <div><div class="ev-dot amber"></div></div>
+          <div class="ev-body">
+            <div class="t">Renamed file to <span class="hl">q2-forecast-personal.xlsx</span></div>
+            <div class="d"><span>local fs</span><span>~/Downloads/</span><span>removes classification tag</span></div>
+          </div>
+          <span class="ev-tag">file.rename</span>
+        </div>
+        <div class="ev flag">
+          <div class="ev-time"><b>14:32:07</b>PDT · 13m ago</div>
+          <div><div class="ev-dot red"></div></div>
+          <div class="ev-body">
+            <div class="t"><span class="hlr">Outbound email attempted · attachment blocked by DLP</span></div>
+            <div class="d"><span>to daniel.reyes.84@gmail.com</span><span>subj "weekend numbers"</span><span>attach 1 · 4.1 MB</span><span>policy <b style="color:var(--ink)">DLP-R-019 · external-share-restricted</b></span></div>
+          </div>
+          <span class="ev-tag" style="background:var(--red-2);color:var(--red)">INCIDENT</span>
+        </div>
+        <div class="ev flag">
+          <div class="ev-time"><b>14:32:09</b>PDT · 13m ago</div>
+          <div><div class="ev-dot red"></div></div>
+          <div class="ev-body">
+            <div class="t">User acknowledged policy prompt and <span class="hlr">retried with 2nd attempt via shared link</span></div>
+            <div class="d"><span>onedrive.share · anonymous-link</span><span>blocked by policy</span><span>elapsed 2s after 1st block</span></div>
+          </div>
+          <span class="ev-tag" style="background:var(--red-2);color:var(--red)">INTENT ↑</span>
+        </div>
+        <div class="ev">
+          <div class="ev-time"><b>14:33:54</b>PDT · 11m ago</div>
+          <div><div class="ev-dot"></div></div>
+          <div class="ev-body">
+            <div class="t">Opened browser tab · <span class="hl">support article "how to share a file outside company"</span></div>
+            <div class="d"><span>intranet.northwind/help/s/214</span><span>6s dwell</span></div>
+          </div>
+          <span class="ev-tag">browser.visit</span>
+        </div>
+        <div class="ev">
+          <div class="ev-time"><b>14:35:12</b>PDT · 10m ago</div>
+          <div><div class="ev-dot green"></div></div>
+          <div class="ev-body">
+            <div class="t">Auto-quarantine <span class="hl">q2-forecast-personal.xlsx</span> on managed device</div>
+            <div class="d"><span>crowdstrike.mdm</span><span>file hash sha256:6f3c…a1</span><span>user notified</span></div>
+          </div>
+          <span class="ev-tag">endpoint.quarantine</span>
+        </div>
+        <div class="ev">
+          <div class="ev-time"><b>14:38:20</b>PDT · 7m ago</div>
+          <div><div class="ev-dot"></div></div>
+          <div class="ev-body">
+            <div class="t">User opened Slack DM to manager S. Alvarez — <span class="hl">draft not sent</span></div>
+            <div class="d"><span>typing 42s</span><span>deleted draft</span></div>
+          </div>
+          <span class="ev-tag">slack.draft</span>
+        </div>
+        <div class="ev">
+          <div class="ev-time"><b>14:42:11</b>PDT · 3m ago</div>
+          <div><div class="ev-dot cyan"></div></div>
+          <div class="ev-body">
+            <div class="t">Incident triaged and assigned to <span class="hl">M. Kwon</span> by auto-router</div>
+            <div class="d"><span>priority HIGH</span><span>sla 4h</span><span>playbook PB-DATA-019</span></div>
+          </div>
+          <span class="ev-tag">incident.triage</span>
+        </div>
+      </div>
+
+      <div style="padding:12px 0 22px;display:flex;justify-content:space-between;align-items:center">
+        <span style="font-family:var(--mono);font-size:11.5px;color:var(--ink-3)">showing 10 of 1,240 events in window</span>
+        <button class="btn">Load earlier ▾</button>
+      </div>
+    </section>
+  </section>
+
+  <!-- RIGHT COLUMN -->
+  <aside class="col col-right">
+    <div class="panel" style="padding:24px 22px 26px">
+      <div class="conf-title">
+        <h3>Intent classification</h3>
+        <span class="pill ghost" style="font-family:var(--mono);font-size:10.5px">model v2.8</span>
+      </div>
+      <div class="conf-meter">
+        <svg viewBox="0 0 200 130">
+          <defs>
+            <linearGradient id="arc" x1="0" x2="1">
+              <stop offset="0%" stop-color="#3fb27f"></stop>
+              <stop offset="50%" stop-color="#e3a02b"></stop>
+              <stop offset="100%" stop-color="#e5484d"></stop>
+            </linearGradient>
+          </defs>
+          <path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="#232b36" stroke-width="10" stroke-linecap="square"></path>
+          <path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="url(#arc)" stroke-width="10" stroke-linecap="square" stroke-dasharray="251.3" stroke-dashoffset="80"></path>
+          <g transform="translate(100 110) rotate(32.4)">
+            <line x1="0" y1="8" x2="0" y2="-68" stroke="#e6ebf2" stroke-width="2.5" stroke-linecap="round"></line>
+            <circle cx="0" cy="0" r="4" fill="#e6ebf2"></circle>
+          </g>
+          <text x="100" y="92" text-anchor="middle" font-family="JetBrains Mono" font-size="28" font-weight="600" fill="#e3a02b" letter-spacing="-1">68<tspan font-size="14" fill="#6b7685" dy="-6">%</tspan></text>
+          <text x="20" y="126" text-anchor="start" font-family="JetBrains Mono" font-size="8.5" fill="#6b7685" letter-spacing="0.5">ACCIDENTAL</text>
+          <text x="180" y="126" text-anchor="end" font-family="JetBrains Mono" font-size="8.5" fill="#e3a02b" letter-spacing="0.5">DELIBERATE</text>
+        </svg>
+        <div class="conf-sublabel">confidence · deliberate</div>
+      </div>
+
+      <div class="conf-verdict">
+        <span class="ic">!</span>
+        <div>
+          <div class="t">Likely deliberate exfiltration</div>
+          <div class="s">Retry after block, rename to strip classification, and external personal address raise intent probability. Not yet conclusive.</div>
+        </div>
+      </div>
+
+      <div class="conf-downstream">
+        <span>68% deliberate</span>
+        <span class="arr">→</span>
+        <span>recommends <b>notify manager</b> + <b>escalate to insider threat</b></span>
+      </div>
+
+      <div class="factors">
+        <div class="factors-head">
+          <span class="fh-label">Signals contributing to score</span>
+        </div>
+        <div class="factor neg">
+          <div class="t">Retried after DLP block (+2s)</div>
+          <div class="w"><span class="arrow">▲</span> +28</div>
+          <div class="bar"><i style="width:78%"></i></div>
+        </div>
+        <div class="factor neg">
+          <div class="t">Renamed file to strip classification tag</div>
+          <div class="w"><span class="arrow">▲</span> +21</div>
+          <div class="bar"><i style="width:62%"></i></div>
+        </div>
+        <div class="factor neg">
+          <div class="t">Recipient is personal email of same user</div>
+          <div class="w"><span class="arrow">▲</span> +14</div>
+          <div class="bar"><i style="width:45%"></i></div>
+        </div>
+        <div class="factor pos">
+          <div class="t">Opened help article after block</div>
+          <div class="w"><span class="arrow">▼</span> −9</div>
+          <div class="bar"><i style="width:34%"></i></div>
+        </div>
+        <div class="factor pos">
+          <div class="t">No prior exfil pattern on this device</div>
+          <div class="w"><span class="arrow">▼</span> −6</div>
+          <div class="bar"><i style="width:22%"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel bridge-panel" style="padding:0">
+      <div class="bridge">
+        <div class="bridge-rail"></div>
+        <div class="bridge-body">
+          <span class="bridge-arrow">↳</span>
+          <span class="bridge-text">Because intent is classified <b>likely deliberate · 68%</b>, response is weighted toward <b>containment</b>.</span>
+        </div>
+      </div>
+
+      <div style="padding:16px 18px 18px">
+        <div class="split-h">
+          <h3>Response actions <span class="triggered-by">← triggered by intent score</span></h3>
+          <a class="more" href="#">Playbook PB-DATA-019 ↗</a>
+        </div>
+
+        <div class="actions">
+          <div class="a-h">
+            4 actions available
+            <span class="rec">2 recommended</span>
+          </div>
+          <div class="a-list">
+            <div class="action recommended" data-action="notify">
+              <div class="a-check"></div>
+              <div class="a-body">
+                <div class="a-t">Notify manager <span class="rec-tag">REC</span></div>
+                <div class="a-s">Send automated incident summary + evidence packet to S. Alvarez with 24h response required.</div>
+                <div class="a-meta">channel · email+slack · template MGR-03</div>
+              </div>
+              <div class="a-go">→</div>
+            </div>
+            <div class="action" data-action="training">
+              <div class="a-check"></div>
+              <div class="a-body">
+                <div class="a-t">Assign targeted training</div>
+                <div class="a-s">Data-handling · external-share module. Completion required within 7 days or access auto-restricts.</div>
+                <div class="a-meta">module DLP-201 · 18 min · tracked</div>
+              </div>
+              <div class="a-go">→</div>
+            </div>
+            <div class="action" data-action="restrict">
+              <div class="a-check"></div>
+              <div class="a-body">
+                <div class="a-t">Restrict access</div>
+                <div class="a-s">Revoke external-share scope and downgrade SharePoint clearance to Tier 1 pending review. Reversible.</div>
+                <div class="a-meta">scope · finance.share.external · downgrade · audit-logged</div>
+              </div>
+              <div class="a-go">→</div>
+            </div>
+            <div class="action recommended" data-action="escalate">
+              <div class="a-check"></div>
+              <div class="a-body">
+                <div class="a-t">Escalate to Insider Threat <span class="rec-tag">REC</span></div>
+                <div class="a-s">Open IR case with IT-Sec insider-threat team; preserves device, inbox and endpoint telemetry for forensics.</div>
+                <div class="a-meta">team · it-sec.insider · case auto-created · legal-hold</div>
+              </div>
+              <div class="a-go">→</div>
+            </div>
+          </div>
+          <div class="a-footer">
+            <button class="btn" id="runSelected">Run selected (0)</button>
+            <button class="btn primary">Run all recommended</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" style="padding:16px 18px">
+      <div class="split-h">
+        <h3>Policy hit</h3>
+        <a class="more" href="#">View rule ↗</a>
+      </div>
+      <div style="border:1px solid var(--line);background:var(--panel);padding:10px 12px;font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--ink-2)">
+        <div><span style="color:var(--ink-3)">rule&nbsp;&nbsp;</span>DLP-R-019</div>
+        <div><span style="color:var(--ink-3)">name&nbsp;&nbsp;</span>external-share-restricted</div>
+        <div><span style="color:var(--ink-3)">match&nbsp;</span>classification IN (RESTRICTED,SECRET) <span style="color:var(--ink-3)">AND</span> recipient.domain NOT IN allow_list</div>
+        <div><span style="color:var(--ink-3)">action</span> <span style="color:var(--red)">BLOCK</span> + <span style="color:var(--amber)">INCIDENT</span></div>
+        <div><span style="color:var(--ink-3)">owner&nbsp;</span>sec.policy@northwind</div>
+      </div>
+    </div>
+  </aside>
+</main>
+
+<footer class="status">
+  <span><b>INC-20460419-0473</b></span>
+  <span>playbook <b>PB-DATA-019</b> · step 2 of 5</span>
+  <span>SLA · <b style="color:var(--amber)">03h 47m</b> remaining</span>
+  <span>auto-save · 4s ago</span>
+  <span class="sp"></span>
+  <span><span class="k">?</span> shortcuts</span>
+  <span><span class="k">J</span>/<span class="k">K</span> nav events</span>
+  <span><span class="k">R</span> resolve</span>
+  <span><span class="k">E</span> escalate</span>
+</footer>
+
+<div class="toast" id="toast"><span class="bd"></span><span id="toastMsg">Action queued</span></div>
+
+<script>
+  (function(){
+    const days = 3, hrs = 24;
+    const heat = document.getElementById('heat');
+    const baseByHr = [0,0,0,0,0,0,1,1,2,2,3,3,3,4,4,3,2,2,1,1,2,1,0,0];
+    const flagCells = new Set(['0-14','0-2','1-14','2-14']);
+    for(let d=0; d<days; d++){
+      for(let h=0; h<hrs; h++){
+        const cell = document.createElement('div');
+        let l = baseByHr[h];
+        if(d>0 && (h<6 || h>21) && ((h*d)%5===0)) l = Math.max(l,2);
+        cell.dataset.l = l;
+        if(flagCells.has(d+'-'+h)) cell.classList.add('flag');
+        cell.title = `${['today','-1d','-2d'][d]} ${String(h).padStart(2,'0')}:00`;
+        heat.appendChild(cell);
+      }
+    }
+  })();
+
+  const actions = document.querySelectorAll('.action');
+  const runBtn = document.getElementById('runSelected');
+  const toast = document.getElementById('toast');
+  const toastMsg = document.getElementById('toastMsg');
+
+  function updateRunLabel(){
+    const n = document.querySelectorAll('.action.done').length;
+    runBtn.textContent = `Run selected (${n})`;
+  }
+  function showToast(m){
+    toastMsg.textContent = m;
+    toast.classList.add('on');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(()=>toast.classList.remove('on'), 2200);
+  }
+  actions.forEach(a=>{
+    a.addEventListener('click', e=>{
+      a.classList.toggle('done');
+      updateRunLabel();
+      if(a.classList.contains('done')){
+        showToast('Queued: ' + a.querySelector('.a-t').childNodes[0].textContent.trim());
+      }
+    });
+  });
+
+  document.getElementById('resolveBtn').addEventListener('click', ()=>{
+    showToast('Incident marked as resolved · review pending');
+  });
+
+  document.querySelectorAll('.tab').forEach(t=>{
+    t.addEventListener('click',()=>{
+      document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+      t.classList.add('active');
+    });
+  });
+
+  document.querySelectorAll('.tl-filters button').forEach(b=>{
+    b.addEventListener('click',()=>{
+      document.querySelectorAll('.tl-filters button').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+    });
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(e.target.matches('input,textarea')) return;
+    if(e.key.toLowerCase()==='r'){ document.getElementById('resolveBtn').click(); }
+    if(e.key.toLowerCase()==='e'){
+      const esc = document.querySelector('.action[data-action="escalate"]');
+      if(esc) esc.click();
+    }
+  });
+</script>
+
+</body>
+</html>
