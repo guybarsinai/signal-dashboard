@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- saved from url=(0053)file:///C:/Users/guybs/Downloads/signal-incident.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="Content-Security-Policy" content="frame-ancestors *">
-  <meta charset="UTF-8">
+
   <title>Signal — Incident INC-20460419-0473</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./index_files/css2" rel="stylesheet">
 
 <style>
   :root{
@@ -78,7 +77,7 @@
   .pill.ghost{color:var(--ink-2);background:transparent}
 
   .header-actions{margin-left:auto;display:flex;gap:8px;align-items:center}
-  .btn{appearance:none;border:1px solid var(--line-2);background:var(--panel);color:var(--ink);font-family:var(--sans);font-size:12.5px;padding:7px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background .12s, border-color .12s}
+  .btn{appearance:none;border:1px solid var(--line-2);background:var(--panel);color:var(--ink);font-family:var(--sans);font-size:12.5px;padding:7px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background .12s, border-color .12s, color .12s}
   .btn:hover{background:var(--panel-hi);border-color:#3a4656}
   .btn.primary{background:#b8801b;border-color:#b8801b;color:#0c0f13;font-weight:600}
   .btn.primary:hover{background:#d49428;border-color:#d49428}
@@ -267,6 +266,9 @@
   .actions{border:1px solid var(--line);background:var(--panel)}
   .a-h{padding:10px 12px;border-bottom:1px solid var(--line);background:var(--panel-2);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);font-weight:600;display:flex;justify-content:space-between;align-items:center}
   .a-h .rec{color:var(--amber);font-family:var(--mono);text-transform:none;letter-spacing:0;font-size:11px;font-weight:500}
+  .a-h .rec.split{color:var(--ink-3);font-family:var(--mono);font-weight:500}
+  .a-h .rec.split b{color:var(--amber);font-weight:500}
+  .a-h .rec.split em{color:var(--red);font-style:normal;font-weight:500}
   .a-list{display:flex;flex-direction:column}
   .action{display:flex;gap:12px;padding:12px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .12s;align-items:flex-start;position:relative;background:var(--panel-2)}
   .action:last-child{border-bottom:none}
@@ -283,15 +285,31 @@
   .action.done .a-check{background:var(--green);border-color:var(--green)}
   .action.done .a-check::after{content:"";width:8px;height:4px;border-left:2px solid var(--bg);border-bottom:2px solid var(--bg);transform:rotate(-45deg) translate(1px,-1px)}
   .a-body{flex:1;min-width:0}
-  .a-t{font-size:13px;color:var(--ink);font-weight:500;display:flex;align-items:center;gap:8px}
+  .a-t{font-size:13px;color:var(--ink);font-weight:500;display:flex;align-items:center;gap:8px;flex-wrap:wrap;row-gap:4px}
   .a-t .rec-tag{font-family:var(--mono);font-size:9.5px;background:var(--amber);color:#0c0f13;padding:1px 5px;border-radius:2px;letter-spacing:.04em;font-weight:600}
   .a-s{font-size:11.5px;color:var(--ink-3);margin-top:3px;line-height:1.45}
   .a-meta{font-family:var(--mono);font-size:10.5px;color:var(--ink-4);margin-top:4px}
   .a-go{color:var(--ink-3);font-family:var(--mono);font-size:16px;align-self:center;flex-shrink:0}
   .action:hover .a-go{color:var(--ink)}
 
-  .a-footer{padding:10px 12px;display:flex;gap:8px;border-top:1px solid var(--line);background:var(--panel-2)}
-  .a-footer .btn{flex:1;justify-content:center}
+  /* Reversibility system - distinguishes permanent actions from reversible */
+  .tag-rev{font-family:var(--mono);font-size:9px;background:rgba(63,178,127,.12);color:var(--green);border:1px solid rgba(63,178,127,.3);padding:2px 6px;border-radius:2px;letter-spacing:.06em;font-weight:600;text-transform:uppercase}
+  .tag-perm{font-family:var(--mono);font-size:9px;background:rgba(229,72,77,.14);color:var(--red);border:1px solid rgba(229,72,77,.4);padding:2px 6px;border-radius:2px;letter-spacing:.06em;font-weight:600;text-transform:uppercase}
+  .action.permanent{background:linear-gradient(90deg,rgba(229,72,77,.18),rgba(229,72,77,.04) 70%);border-left:3px solid var(--red)}
+  .action.permanent:hover{background:linear-gradient(90deg,rgba(229,72,77,.24),rgba(229,72,77,.08) 70%)}
+  .action.permanent .a-t{color:#ffb3b6;font-weight:600}
+  .action.permanent .a-s{color:#d9a4a6}
+  .action.permanent .a-check{border-color:var(--red);background:rgba(229,72,77,.12)}
+  .action.permanent .a-go{color:var(--red)}
+  .a-warning{font-family:var(--mono);font-size:10.5px;color:#ff8a8e;margin-top:8px;padding:6px 8px;background:rgba(229,72,77,.1);border-left:2px solid var(--red);line-height:1.45;display:flex;gap:6px;align-items:flex-start}
+  .a-warning::before{content:"⚠";flex-shrink:0;color:var(--red);font-size:11px;line-height:1.2}
+
+  .btn.ghost-warn{background:transparent;border-color:rgba(229,72,77,.45);color:#ff8a8e}
+  .btn.ghost-warn:hover{background:rgba(229,72,77,.08);border-color:var(--red);color:#ffb3b6}
+  .btn.ghost-warn.armed{background:rgba(229,72,77,.18);border-color:var(--red);color:#fff;font-weight:600}
+
+  .a-footer{padding:10px 12px;display:flex;gap:8px;border-top:1px solid var(--line);background:var(--panel-2);flex-wrap:wrap}
+  .a-footer .btn{flex:1;justify-content:center;min-width:0}
 
   .bridge-panel{border-top:none !important;padding:0 !important}
   .bridge{position:relative;padding:0 18px;margin-top:-8px}
@@ -301,10 +319,11 @@
   .bridge-text b{color:var(--ink);font-weight:600}
   .triggered-by{font-family:var(--mono);font-size:10.5px;color:var(--amber);text-transform:none;letter-spacing:0;font-weight:500;margin-left:8px}
 
-  .conf-downstream{margin-top:14px;display:flex;align-items:center;gap:8px;padding-top:12px;border-top:1px dashed var(--line-2);font-family:var(--mono);font-size:11px;color:var(--amber)}
+  .conf-downstream{margin-top:14px;display:flex;align-items:center;gap:8px;padding-top:12px;border-top:1px dashed var(--line-2);font-family:var(--mono);font-size:11px;color:var(--amber);flex-wrap:wrap}
   .conf-downstream::before{content:"";width:6px;height:6px;background:var(--amber);border-radius:50%;box-shadow:0 0 0 3px rgba(227,160,43,.2)}
   .conf-downstream .arr{color:var(--ink-3);margin:0 2px}
   .conf-downstream b{color:var(--ink);font-weight:500}
+  .conf-downstream .perm{color:var(--red);font-weight:500}
 
   .split-h{display:flex;align-items:center;justify-content:space-between;margin:0 0 10px}
   .split-h h3{margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);font-weight:600}
@@ -330,6 +349,8 @@
   .toast{position:fixed;bottom:36px;right:20px;background:var(--panel-hi);border:1px solid var(--line-2);padding:10px 14px;font-size:12.5px;color:var(--ink);display:flex;gap:10px;align-items:center;transform:translateY(20px);opacity:0;transition:transform .2s, opacity .2s;z-index:50;box-shadow:0 12px 24px rgba(0,0,0,.4)}
   .toast.on{transform:none;opacity:1}
   .toast .bd{width:6px;height:6px;border-radius:50%;background:var(--green)}
+  .toast.warn{border-color:rgba(229,72,77,.5)}
+  .toast.warn .bd{background:var(--red);box-shadow:0 0 0 3px rgba(229,72,77,.18)}
 </style>
 </head>
 <body>
@@ -343,12 +364,12 @@
     </div>
   </div>
   <nav class="nav">
-    <a href="#">Overview</a>
-    <a href="#" class="active">Incidents</a>
-    <a href="#">Policies</a>
-    <a href="#">Users</a>
-    <a href="#">Data</a>
-    <a href="#">Reports</a>
+    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Overview</a>
+    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#" class="active">Incidents</a>
+    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Policies</a>
+    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Users</a>
+    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Data</a>
+    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Reports</a>
   </nav>
   <div class="chrome-right">
     <span><span class="dot live"></span>&nbsp; streaming · 412 events/s</span>
@@ -457,15 +478,15 @@
     <div class="panel" style="padding-bottom:22px">
       <div class="panel-title">Related incidents <span class="count">3 · 90d</span></div>
       <div style="display:flex;flex-direction:column;gap:8px;font-family:var(--mono);font-size:11.5px">
-        <a href="#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
+        <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
           <span><span class="pill amber" style="margin-right:8px">MED</span>INC-20460412-0128</span>
           <span style="color:var(--ink-3)">7d</span>
         </a>
-        <a href="#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
+        <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
           <span><span class="pill amber" style="margin-right:8px">MED</span>INC-20460403-0091</span>
           <span style="color:var(--ink-3)">16d</span>
         </a>
-        <a href="#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
+        <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
           <span><span class="pill ghost" style="margin-right:8px">LOW</span>INC-20460219-0051</span>
           <span style="color:var(--ink-3)">59d</span>
         </a>
@@ -657,11 +678,11 @@
       <div class="conf-meter">
         <svg viewBox="0 0 200 130">
           <defs>
-            <linearGradient id="arc" x1="0" x2="1">
+            <lineargradient id="arc" x1="0" x2="1">
               <stop offset="0%" stop-color="#3fb27f"></stop>
               <stop offset="50%" stop-color="#e3a02b"></stop>
               <stop offset="100%" stop-color="#e5484d"></stop>
-            </linearGradient>
+            </lineargradient>
           </defs>
           <path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="#232b36" stroke-width="10" stroke-linecap="square"></path>
           <path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="url(#arc)" stroke-width="10" stroke-linecap="square" stroke-dasharray="251.3" stroke-dashoffset="80"></path>
@@ -687,7 +708,7 @@
       <div class="conf-downstream">
         <span>68% deliberate</span>
         <span class="arr">→</span>
-        <span>recommends <b>notify manager</b> + <b>escalate to insider threat</b></span>
+        <span>recommends <b>notify manager</b> + <span class="perm">escalate to insider threat</span></span>
       </div>
 
       <div class="factors">
@@ -734,55 +755,57 @@
       <div style="padding:16px 18px 18px">
         <div class="split-h">
           <h3>Response actions <span class="triggered-by">← triggered by intent score</span></h3>
-          <a class="more" href="#">Playbook PB-DATA-019 ↗</a>
+          <a class="more" href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Playbook PB-DATA-019 ↗</a>
         </div>
 
         <div class="actions">
           <div class="a-h">
             4 actions available
-            <span class="rec">2 recommended</span>
+            <span class="rec split"><b>2 recommended</b> · <em>1 permanent</em></span>
           </div>
           <div class="a-list">
-            <div class="action recommended" data-action="notify">
+            <div class="action recommended" data-action="notify" data-reversibility="reversible" data-recommended="true">
               <div class="a-check"></div>
               <div class="a-body">
-                <div class="a-t">Notify manager <span class="rec-tag">REC</span></div>
+                <div class="a-t">Notify manager <span class="rec-tag">REC</span> <span class="tag-rev">Reversible</span></div>
                 <div class="a-s">Send automated incident summary + evidence packet to S. Alvarez with 24h response required.</div>
                 <div class="a-meta">channel · email+slack · template MGR-03</div>
               </div>
               <div class="a-go">→</div>
             </div>
-            <div class="action" data-action="training">
+            <div class="action" data-action="training" data-reversibility="reversible">
               <div class="a-check"></div>
               <div class="a-body">
-                <div class="a-t">Assign targeted training</div>
+                <div class="a-t">Assign targeted training <span class="tag-rev">Reversible</span></div>
                 <div class="a-s">Data-handling · external-share module. Completion required within 7 days or access auto-restricts.</div>
                 <div class="a-meta">module DLP-201 · 18 min · tracked</div>
               </div>
               <div class="a-go">→</div>
             </div>
-            <div class="action" data-action="restrict">
+            <div class="action" data-action="restrict" data-reversibility="reversible">
               <div class="a-check"></div>
               <div class="a-body">
-                <div class="a-t">Restrict access</div>
-                <div class="a-s">Revoke external-share scope and downgrade SharePoint clearance to Tier 1 pending review. Reversible.</div>
+                <div class="a-t">Restrict access <span class="tag-rev">Reversible</span></div>
+                <div class="a-s">Revoke external-share scope and downgrade SharePoint clearance to Tier 1 pending review.</div>
                 <div class="a-meta">scope · finance.share.external · downgrade · audit-logged</div>
               </div>
               <div class="a-go">→</div>
             </div>
-            <div class="action recommended" data-action="escalate">
+            <div class="action permanent" data-action="escalate" data-reversibility="permanent" data-recommended="true">
               <div class="a-check"></div>
               <div class="a-body">
-                <div class="a-t">Escalate to Insider Threat <span class="rec-tag">REC</span></div>
+                <div class="a-t">Escalate to Insider Threat <span class="rec-tag">REC</span> <span class="tag-perm">Permanent · Legal hold</span></div>
                 <div class="a-s">Open IR case with IT-Sec insider-threat team; preserves device, inbox and endpoint telemetry for forensics.</div>
                 <div class="a-meta">team · it-sec.insider · case auto-created · legal-hold</div>
+                <div class="a-warning">Cannot be reversed without IT-Sec approval. Excluded from "Run all recommended" — requires explicit confirmation.</div>
               </div>
               <div class="a-go">→</div>
             </div>
           </div>
           <div class="a-footer">
             <button class="btn" id="runSelected">Run selected (0)</button>
-            <button class="btn primary">Run all recommended</button>
+            <button class="btn primary" id="runReversible">Run reversible recommended (1)</button>
+            <button class="btn ghost-warn" id="confirmEscalate">Confirm escalation →</button>
           </div>
         </div>
       </div>
@@ -791,7 +814,7 @@
     <div class="panel" style="padding:16px 18px">
       <div class="split-h">
         <h3>Policy hit</h3>
-        <a class="more" href="#">View rule ↗</a>
+        <a class="more" href="file:///C:/Users/guybs/Downloads/signal-incident.html#">View rule ↗</a>
       </div>
       <div style="border:1px solid var(--line);background:var(--panel);padding:10px 12px;font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--ink-2)">
         <div><span style="color:var(--ink-3)">rule&nbsp;&nbsp;</span>DLP-R-019</div>
@@ -839,6 +862,8 @@
 
   const actions = document.querySelectorAll('.action');
   const runBtn = document.getElementById('runSelected');
+  const runReversible = document.getElementById('runReversible');
+  const confirmEscalate = document.getElementById('confirmEscalate');
   const toast = document.getElementById('toast');
   const toastMsg = document.getElementById('toastMsg');
 
@@ -846,20 +871,61 @@
     const n = document.querySelectorAll('.action.done').length;
     runBtn.textContent = `Run selected (${n})`;
   }
-  function showToast(m){
+  function showToast(m, warn){
     toastMsg.textContent = m;
+    toast.classList.toggle('warn', !!warn);
     toast.classList.add('on');
     clearTimeout(toast._t);
-    toast._t = setTimeout(()=>toast.classList.remove('on'), 2200);
+    toast._t = setTimeout(()=>toast.classList.remove('on'), 2400);
   }
   actions.forEach(a=>{
     a.addEventListener('click', e=>{
       a.classList.toggle('done');
       updateRunLabel();
       if(a.classList.contains('done')){
-        showToast('Queued: ' + a.querySelector('.a-t').childNodes[0].textContent.trim());
+        const title = a.querySelector('.a-t').childNodes[0].textContent.trim();
+        const isPerm = a.dataset.reversibility === 'permanent';
+        showToast((isPerm ? 'Permanent action queued: ' : 'Queued: ') + title, isPerm);
       }
     });
+  });
+
+  // Run reversible recommended: marks all reversible recommended actions as done
+  runReversible.addEventListener('click', e=>{
+    e.stopPropagation();
+    const targets = document.querySelectorAll('.action[data-recommended="true"][data-reversibility="reversible"]');
+    targets.forEach(a=>{
+      if(!a.classList.contains('done')) a.classList.add('done');
+    });
+    updateRunLabel();
+    showToast(`Reversible recommended actions queued (${targets.length})`);
+  });
+
+  // Confirm escalation: 2-step pattern. First click arms, second click commits.
+  let escArmed = false;
+  let escTimer = null;
+  confirmEscalate.addEventListener('click', e=>{
+    e.stopPropagation();
+    if(!escArmed){
+      escArmed = true;
+      confirmEscalate.classList.add('armed');
+      confirmEscalate.textContent = 'Click again to confirm permanent action';
+      showToast('Escalation will preserve device, inbox, and endpoint telemetry under legal hold. Click again to confirm.', true);
+      escTimer = setTimeout(()=>{
+        escArmed = false;
+        confirmEscalate.classList.remove('armed');
+        confirmEscalate.textContent = 'Confirm escalation →';
+      }, 5000);
+    } else {
+      clearTimeout(escTimer);
+      escArmed = false;
+      confirmEscalate.classList.remove('armed');
+      confirmEscalate.textContent = 'Confirm escalation →';
+      const esc = document.querySelector('.action[data-action="escalate"]');
+      if(esc && !esc.classList.contains('done')) esc.classList.add('done');
+      updateRunLabel();
+      showToast('Escalated to Insider Threat · case auto-created · legal hold applied', true);
+    }
   });
 
   document.getElementById('resolveBtn').addEventListener('click', ()=>{
@@ -884,11 +950,11 @@
     if(e.target.matches('input,textarea')) return;
     if(e.key.toLowerCase()==='r'){ document.getElementById('resolveBtn').click(); }
     if(e.key.toLowerCase()==='e'){
-      const esc = document.querySelector('.action[data-action="escalate"]');
-      if(esc) esc.click();
+      confirmEscalate.click();
     }
   });
 </script>
 
-</body>
-</html>
+
+
+</body></html>
