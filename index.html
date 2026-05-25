@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)file:///C:/Users/guybs/Downloads/signal-incident.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="Content-Security-Policy" content="frame-ancestors *">
 
   <title>Signal — Incident INC-20460419-0473</title>
@@ -19,7 +20,7 @@
     --line-2:    #2d3744;
     --ink:       #e6ebf2;
     --ink-2:     #aab3c0;
-    --ink-3:     #6b7685;
+    --ink-3:     #8d97a5;
     --ink-4:     #485162;
 
     --amber:     #e3a02b;
@@ -352,8 +353,21 @@
   .toast.warn{border-color:rgba(229,72,77,.5)}
   .toast.warn .bd{background:var(--red);box-shadow:0 0 0 3px rgba(229,72,77,.18)}
 </style>
-</head>
-<body>
+<style id="claude-agent-animation-styles">
+      @keyframes claude-pulse {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+      }
+      #claude-agent-glow-border-inner {
+        animation: claude-pulse 2s ease-in-out infinite;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #claude-agent-glow-border-inner {
+          animation: none;
+        }
+      }
+    </style></head>
+<body data-new-gr-c-s-check-loaded="14.1294.0" data-gr-ext-installed="" data-gr-aaa-loaded="14.1294.0" data-gr-aaa-notch-connection-id="1779693225269-0.8392734206301883"><a id="skip-link" href="#main-content" style="position: absolute; top: -40px; left: 0px; background: rgb(21, 26, 34); color: rgb(230, 235, 242); padding: 8px 16px; z-index: 9999; font-family: sans-serif; font-size: 14px; text-decoration: none; border-radius: 0px 0px 4px; transition: top 0.2s;">Skip to main content</a>
 
 <header class="chrome">
   <div class="brand">
@@ -363,13 +377,13 @@
       <div class="brand-sub">DLP · v1.0.0</div>
     </div>
   </div>
-  <nav class="nav">
-    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Overview</a>
-    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#" class="active">Incidents</a>
-    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Policies</a>
-    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Users</a>
-    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Data</a>
-    <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Reports</a>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#">Overview</a>
+    <a href="#" class="active">Incidents</a>
+    <a href="#">Policies</a>
+    <a href="#">Users</a>
+    <a href="#">Data</a>
+    <a href="#">Reports</a>
   </nav>
   <div class="chrome-right">
     <span><span class="dot live"></span>&nbsp; streaming · 412 events/s</span>
@@ -404,11 +418,11 @@
     <button class="btn">Assign <span class="k">A</span></button>
     <button class="btn">Snooze</button>
     <button class="btn danger">Close as FP</button>
-    <button class="btn primary" id="resolveBtn">Resolve incident</button>
+    <button class="btn primary" id="resolveBtn" aria-keyshortcuts="r">Resolve incident</button>
   </div>
 </section>
 
-<main class="grid">
+<main class="grid" id="main-content">
 
   <!-- LEFT COLUMN -->
   <aside class="col col-left">
@@ -464,7 +478,7 @@
       </dl>
       <div class="pattern">
         <div class="ph"><span>Share activity · 24h</span><b>peak 14:30</b></div>
-        <div class="heat" id="heat"></div>
+        <div class="heat" id="heat"><div data-l="0" title="today 00:00"></div><div data-l="0" title="today 01:00"></div><div data-l="0" class="flag" title="today 02:00"></div><div data-l="0" title="today 03:00"></div><div data-l="0" title="today 04:00"></div><div data-l="0" title="today 05:00"></div><div data-l="1" title="today 06:00"></div><div data-l="1" title="today 07:00"></div><div data-l="2" title="today 08:00"></div><div data-l="2" title="today 09:00"></div><div data-l="3" title="today 10:00"></div><div data-l="3" title="today 11:00"></div><div data-l="3" title="today 12:00"></div><div data-l="4" title="today 13:00"></div><div data-l="4" class="flag" title="today 14:00"></div><div data-l="3" title="today 15:00"></div><div data-l="2" title="today 16:00"></div><div data-l="2" title="today 17:00"></div><div data-l="1" title="today 18:00"></div><div data-l="1" title="today 19:00"></div><div data-l="2" title="today 20:00"></div><div data-l="1" title="today 21:00"></div><div data-l="0" title="today 22:00"></div><div data-l="0" title="today 23:00"></div><div data-l="2" title="-1d 00:00"></div><div data-l="0" title="-1d 01:00"></div><div data-l="0" title="-1d 02:00"></div><div data-l="0" title="-1d 03:00"></div><div data-l="0" title="-1d 04:00"></div><div data-l="2" title="-1d 05:00"></div><div data-l="1" title="-1d 06:00"></div><div data-l="1" title="-1d 07:00"></div><div data-l="2" title="-1d 08:00"></div><div data-l="2" title="-1d 09:00"></div><div data-l="3" title="-1d 10:00"></div><div data-l="3" title="-1d 11:00"></div><div data-l="3" title="-1d 12:00"></div><div data-l="4" title="-1d 13:00"></div><div data-l="4" class="flag" title="-1d 14:00"></div><div data-l="3" title="-1d 15:00"></div><div data-l="2" title="-1d 16:00"></div><div data-l="2" title="-1d 17:00"></div><div data-l="1" title="-1d 18:00"></div><div data-l="1" title="-1d 19:00"></div><div data-l="2" title="-1d 20:00"></div><div data-l="1" title="-1d 21:00"></div><div data-l="0" title="-1d 22:00"></div><div data-l="0" title="-1d 23:00"></div><div data-l="2" title="-2d 00:00"></div><div data-l="0" title="-2d 01:00"></div><div data-l="0" title="-2d 02:00"></div><div data-l="0" title="-2d 03:00"></div><div data-l="0" title="-2d 04:00"></div><div data-l="2" title="-2d 05:00"></div><div data-l="1" title="-2d 06:00"></div><div data-l="1" title="-2d 07:00"></div><div data-l="2" title="-2d 08:00"></div><div data-l="2" title="-2d 09:00"></div><div data-l="3" title="-2d 10:00"></div><div data-l="3" title="-2d 11:00"></div><div data-l="3" title="-2d 12:00"></div><div data-l="4" title="-2d 13:00"></div><div data-l="4" class="flag" title="-2d 14:00"></div><div data-l="3" title="-2d 15:00"></div><div data-l="2" title="-2d 16:00"></div><div data-l="2" title="-2d 17:00"></div><div data-l="1" title="-2d 18:00"></div><div data-l="1" title="-2d 19:00"></div><div data-l="2" title="-2d 20:00"></div><div data-l="1" title="-2d 21:00"></div><div data-l="0" title="-2d 22:00"></div><div data-l="0" title="-2d 23:00"></div></div>
         <div class="heat-axis"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>
       </div>
       <div class="mini-stats">
@@ -478,15 +492,15 @@
     <div class="panel" style="padding-bottom:22px">
       <div class="panel-title">Related incidents <span class="count">3 · 90d</span></div>
       <div style="display:flex;flex-direction:column;gap:8px;font-family:var(--mono);font-size:11.5px">
-        <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
+        <a href="#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
           <span><span class="pill amber" style="margin-right:8px">MED</span>INC-20460412-0128</span>
           <span style="color:var(--ink-3)">7d</span>
         </a>
-        <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
+        <a href="#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
           <span><span class="pill amber" style="margin-right:8px">MED</span>INC-20460403-0091</span>
           <span style="color:var(--ink-3)">16d</span>
         </a>
-        <a href="file:///C:/Users/guybs/Downloads/signal-incident.html#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
+        <a href="#" style="display:flex;justify-content:space-between;color:var(--ink-2);text-decoration:none;padding:8px 10px;border:1px solid var(--line);background:var(--panel)">
           <span><span class="pill ghost" style="margin-right:8px">LOW</span>INC-20460219-0051</span>
           <span style="color:var(--ink-3)">59d</span>
         </a>
@@ -544,12 +558,12 @@
     <section class="tl">
       <div class="tl-head">
         <h3>Activity timeline · incident ±2h window</h3>
-        <div class="tl-filters">
-          <button>1h</button>
-          <button class="on">6h</button>
-          <button>24h</button>
-          <button>7d</button>
-          <button>30d</button>
+        <div class="tl-filters" role="tablist" aria-label="Time window">
+          <button role="tab" aria-selected="false">1h</button>
+          <button class="on" role="tab" aria-selected="false">6h</button>
+          <button role="tab" aria-selected="true">24h</button>
+          <button role="tab" aria-selected="false">7d</button>
+          <button role="tab" aria-selected="false">30d</button>
         </div>
       </div>
       <div class="tl-strip" aria-hidden="true">
@@ -570,7 +584,7 @@
 
       <div class="events">
         <div class="ev">
-          <div class="ev-time"><b>12:08:41</b>PDT · 2h 37m ago</div>
+          <div class="ev-time"><b><time datetime="2046-04-19T12:08:41-07:00">12:08:41</time></b>PDT · 2h 37m ago</div>
           <div><div class="ev-dot cyan"></div></div>
           <div class="ev-body">
             <div class="t">VPN session established from <span class="hl">Seattle · res ISP</span></div>
@@ -579,7 +593,7 @@
           <span class="ev-tag">auth.session</span>
         </div>
         <div class="ev">
-          <div class="ev-time"><b>13:42:19</b>PDT · 1h 03m ago</div>
+          <div class="ev-time"><b><time datetime="2046-04-19T13:42:19-07:00">13:42:19</time></b>PDT · 1h 03m ago</div>
           <div><div class="ev-dot cyan"></div></div>
           <div class="ev-body">
             <div class="t">Accessed SharePoint path <span class="hl">/finance/fp&amp;a/forecasting/2046/Q2/</span></div>
@@ -588,7 +602,7 @@
           <span class="ev-tag">sharepoint.list</span>
         </div>
         <div class="ev">
-          <div class="ev-time"><b>14:11:02</b>PDT · 34m ago</div>
+          <div class="ev-time"><b><time datetime="2046-04-19T14:11:02-07:00">14:11:02</time></b>PDT · 34m ago</div>
           <div><div class="ev-dot amber"></div></div>
           <div class="ev-body">
             <div class="t">Downloaded <span class="hl">Q2-Pricing-Forecast.xlsx</span> to local device</div>
@@ -597,7 +611,7 @@
           <span class="ev-tag">file.download</span>
         </div>
         <div class="ev">
-          <div class="ev-time"><b>14:19:47</b>PDT · 26m ago</div>
+          <div class="ev-time"><b><time datetime="2046-04-19T14:19:47-07:00">14:19:47</time></b>PDT · 26m ago</div>
           <div><div class="ev-dot amber"></div></div>
           <div class="ev-body">
             <div class="t">Renamed file to <span class="hl">q2-forecast-personal.xlsx</span></div>
@@ -606,7 +620,7 @@
           <span class="ev-tag">file.rename</span>
         </div>
         <div class="ev flag">
-          <div class="ev-time"><b>14:32:07</b>PDT · 13m ago</div>
+          <div class="ev-time"><b><time datetime="2046-04-19T14:32:07-07:00">14:32:07</time></b>PDT · 13m ago</div>
           <div><div class="ev-dot red"></div></div>
           <div class="ev-body">
             <div class="t"><span class="hlr">Outbound email attempted · attachment blocked by DLP</span></div>
@@ -615,7 +629,7 @@
           <span class="ev-tag" style="background:var(--red-2);color:var(--red)">INCIDENT</span>
         </div>
         <div class="ev flag">
-          <div class="ev-time"><b>14:32:09</b>PDT · 13m ago</div>
+          <div class="ev-time"><b><time datetime="2046-04-19T14:32:09-07:00">14:32:09</time></b>PDT · 13m ago</div>
           <div><div class="ev-dot red"></div></div>
           <div class="ev-body">
             <div class="t">User acknowledged policy prompt and <span class="hlr">retried with 2nd attempt via shared link</span></div>
@@ -624,7 +638,7 @@
           <span class="ev-tag" style="background:var(--red-2);color:var(--red)">INTENT ↑</span>
         </div>
         <div class="ev">
-          <div class="ev-time"><b>14:33:54</b>PDT · 11m ago</div>
+          <div class="ev-time"><b><time datetime="2046-04-19T14:33:54-07:00">14:33:54</time></b>PDT · 11m ago</div>
           <div><div class="ev-dot"></div></div>
           <div class="ev-body">
             <div class="t">Opened browser tab · <span class="hl">support article "how to share a file outside company"</span></div>
@@ -633,7 +647,7 @@
           <span class="ev-tag">browser.visit</span>
         </div>
         <div class="ev">
-          <div class="ev-time"><b>14:35:12</b>PDT · 10m ago</div>
+          <div class="ev-time"><b><time datetime="2046-04-19T14:35:12-07:00">14:35:12</time></b>PDT · 10m ago</div>
           <div><div class="ev-dot green"></div></div>
           <div class="ev-body">
             <div class="t">Auto-quarantine <span class="hl">q2-forecast-personal.xlsx</span> on managed device</div>
@@ -642,7 +656,7 @@
           <span class="ev-tag">endpoint.quarantine</span>
         </div>
         <div class="ev">
-          <div class="ev-time"><b>14:38:20</b>PDT · 7m ago</div>
+          <div class="ev-time"><b><time datetime="2046-04-19T14:38:20-07:00">14:38:20</time></b>PDT · 7m ago</div>
           <div><div class="ev-dot"></div></div>
           <div class="ev-body">
             <div class="t">User opened Slack DM to manager S. Alvarez — <span class="hl">draft not sent</span></div>
@@ -651,7 +665,7 @@
           <span class="ev-tag">slack.draft</span>
         </div>
         <div class="ev">
-          <div class="ev-time"><b>14:42:11</b>PDT · 3m ago</div>
+          <div class="ev-time"><b><time datetime="2046-04-19T14:42:11-07:00">14:42:11</time></b>PDT · 3m ago</div>
           <div><div class="ev-dot cyan"></div></div>
           <div class="ev-body">
             <div class="t">Incident triaged and assigned to <span class="hl">M. Kwon</span> by auto-router</div>
@@ -676,13 +690,13 @@
         <span class="pill ghost" style="font-family:var(--mono);font-size:10.5px">model v2.8</span>
       </div>
       <div class="conf-meter">
-        <svg viewBox="0 0 200 130">
+        <svg viewBox="0 0 200 130" role="img" aria-label="Intent classification gauge showing 68% confidence of deliberate action"><title>Intent classification: 68% deliberate</title>
           <defs>
-            <lineargradient id="arc" x1="0" x2="1">
+            <linearGradient id="arc" x1="0" x2="1">
               <stop offset="0%" stop-color="#3fb27f"></stop>
               <stop offset="50%" stop-color="#e3a02b"></stop>
               <stop offset="100%" stop-color="#e5484d"></stop>
-            </lineargradient>
+            </linearGradient>
           </defs>
           <path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="#232b36" stroke-width="10" stroke-linecap="square"></path>
           <path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="url(#arc)" stroke-width="10" stroke-linecap="square" stroke-dasharray="251.3" stroke-dashoffset="80"></path>
@@ -755,7 +769,7 @@
       <div style="padding:16px 18px 18px">
         <div class="split-h">
           <h3>Response actions <span class="triggered-by">← triggered by intent score</span></h3>
-          <a class="more" href="file:///C:/Users/guybs/Downloads/signal-incident.html#">Playbook PB-DATA-019 ↗</a>
+          <a class="more" href="#">Playbook PB-DATA-019 ↗</a>
         </div>
 
         <div class="actions">
@@ -767,7 +781,7 @@
             <div class="action recommended" data-action="notify" data-reversibility="reversible" data-recommended="true">
               <div class="a-check"></div>
               <div class="a-body">
-                <div class="a-t">Notify manager <span class="rec-tag">REC</span> <span class="tag-rev">Reversible</span></div>
+                <div class="a-t" role="button" tabindex="0" aria-label="Notify manager">Notify manager <span class="rec-tag">REC</span> <span class="tag-rev">Reversible</span></div>
                 <div class="a-s">Send automated incident summary + evidence packet to S. Alvarez with 24h response required.</div>
                 <div class="a-meta">channel · email+slack · template MGR-03</div>
               </div>
@@ -776,7 +790,7 @@
             <div class="action" data-action="training" data-reversibility="reversible">
               <div class="a-check"></div>
               <div class="a-body">
-                <div class="a-t">Assign targeted training <span class="tag-rev">Reversible</span></div>
+                <div class="a-t" role="button" tabindex="0" aria-label="Assign targeted training">Assign targeted training <span class="tag-rev">Reversible</span></div>
                 <div class="a-s">Data-handling · external-share module. Completion required within 7 days or access auto-restricts.</div>
                 <div class="a-meta">module DLP-201 · 18 min · tracked</div>
               </div>
@@ -785,7 +799,7 @@
             <div class="action" data-action="restrict" data-reversibility="reversible">
               <div class="a-check"></div>
               <div class="a-body">
-                <div class="a-t">Restrict access <span class="tag-rev">Reversible</span></div>
+                <div class="a-t" role="button" tabindex="0" aria-label="Restrict access">Restrict access <span class="tag-rev">Reversible</span></div>
                 <div class="a-s">Revoke external-share scope and downgrade SharePoint clearance to Tier 1 pending review.</div>
                 <div class="a-meta">scope · finance.share.external · downgrade · audit-logged</div>
               </div>
@@ -794,7 +808,7 @@
             <div class="action permanent" data-action="escalate" data-reversibility="permanent" data-recommended="true">
               <div class="a-check"></div>
               <div class="a-body">
-                <div class="a-t">Escalate to Insider Threat <span class="rec-tag">REC</span> <span class="tag-perm">Permanent · Legal hold</span></div>
+                <div class="a-t" role="button" tabindex="0" aria-label="Escalate to Insider Threat">Escalate to Insider Threat <span class="rec-tag">REC</span> <span class="tag-perm">Permanent · Legal hold</span></div>
                 <div class="a-s">Open IR case with IT-Sec insider-threat team; preserves device, inbox and endpoint telemetry for forensics.</div>
                 <div class="a-meta">team · it-sec.insider · case auto-created · legal-hold</div>
                 <div class="a-warning">Cannot be reversed without IT-Sec approval. Excluded from "Run all recommended" — requires explicit confirmation.</div>
@@ -805,7 +819,7 @@
           <div class="a-footer">
             <button class="btn" id="runSelected">Run selected (0)</button>
             <button class="btn primary" id="runReversible">Run reversible recommended (1)</button>
-            <button class="btn ghost-warn" id="confirmEscalate">Confirm escalation →</button>
+            <button class="btn ghost-warn" id="confirmEscalate" aria-keyshortcuts="e">Confirm escalation →</button>
           </div>
         </div>
       </div>
@@ -814,7 +828,7 @@
     <div class="panel" style="padding:16px 18px">
       <div class="split-h">
         <h3>Policy hit</h3>
-        <a class="more" href="file:///C:/Users/guybs/Downloads/signal-incident.html#">View rule ↗</a>
+        <a class="more" href="#">View rule ↗</a>
       </div>
       <div style="border:1px solid var(--line);background:var(--panel);padding:10px 12px;font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--ink-2)">
         <div><span style="color:var(--ink-3)">rule&nbsp;&nbsp;</span>DLP-R-019</div>
@@ -839,7 +853,7 @@
   <span><span class="k">E</span> escalate</span>
 </footer>
 
-<div class="toast" id="toast"><span class="bd"></span><span id="toastMsg">Action queued</span></div>
+<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"><span class="bd"></span><span id="toastMsg">Action queued</span></div>
 
 <script>
   (function(){
@@ -957,4 +971,5 @@
 
 
 
-</body></html>
+
+<div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 0; transition: opacity 0.3s ease-in-out;"><div id="claude-agent-glow-border-inner" style="position: absolute; inset: 0px; will-change: opacity; box-shadow: rgba(217, 119, 87, 0.7) 0px 0px 15px inset, rgba(217, 119, 87, 0.5) 0px 0px 25px inset, rgba(217, 119, 87, 0.2) 0px 0px 35px inset;"></div></div><div id="claude-phantom-cursor" aria-hidden="true" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 2147483646; transform: translate3d(854px, 466px, 0px); transition: transform 180ms cubic-bezier(0.2, 0, 0, 1); will-change: transform;"><svg id="claude-phantom-cursor-plain" width="20" height="26" viewBox="0 0 20 26" style="position: absolute; top: 0px; left: 0px; overflow: visible;"><path d="M0 0 L0 18 L4.5 14 L7.5 21.5 L11 20 L8 13 L14 13 Z" stroke="white" stroke-width="3" stroke-linejoin="round" fill="white"></path><path d="M0 0 L0 18 L4.5 14 L7.5 21.5 L11 20 L8 13 L14 13 Z" fill="#111"></path></svg><svg id="claude-phantom-cursor-styled" width="20" height="26" viewBox="0 0 20 26" style="position: absolute; top: 0px; left: 0px; overflow: visible; filter: drop-shadow(rgba(217, 119, 87, 0.9) 0px 0px 4px) drop-shadow(rgba(217, 119, 87, 0.45) 0px 0px 10px);"><path d="M0 0 L0 18 L4.5 14 L7.5 21.5 L11 20 L8 13 L14 13 Z" stroke="#D97757" stroke-width="3" stroke-linejoin="round" fill="#D97757"></path><path d="M0 0 L0 18 L4.5 14 L7.5 21.5 L11 20 L8 13 L14 13 Z" fill="#FAF9F5"></path></svg></div><veepn-lock-screen><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-lock-screen></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><grammarly-assistant-notch-view role="presentation" data-grammarly-ignore-keyboard-events="true" data-grammarly-shadow-root="true" class="dnXmp" style="--rem: 16;"></grammarly-assistant-notch-view></html>
